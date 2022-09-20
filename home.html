@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome: <script> document.write(localStorage.getItem("name1"))</script></h1>
+
+    <a href="logout.html"> LOGOUT </a>
+
+<script>
+
+var abc=localStorage.getItem("code"); //
+
+if(abc=="secret"){
+
+}
+else {
+    window.location.href="login.html";
+}
+ 
+
+var kfriends = JSON.parse(localStorage.getItem("friends"))
+// to get as array not as string
+
+console.log(kfriends)
+
+document.createElement(li)
+
+</script>
+
+<!-- 
+.user login then friend array 0
+.all friends show on screen
+.add friends
+.when add that particular friend add him to our friend array 
+.delete friends
+.when delete that particular friend add him to our friend array 
+ -->
+    
+
+</body>
+</html>
