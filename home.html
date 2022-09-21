@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> welcome: <script> document.write(localStorage.getItem("name1"))</script></h1>
+    <h1> welcome:</h1>
 
     <a href="logout.html"> LOGOUT </a>
 
@@ -23,12 +23,30 @@ else {
 }
  
 
-var kfriends = JSON.parse(localStorage.getItem("friends"))
+var kfriends = JSON.parse(localStorage.getItem("name1"))
+console.log(kfriends);
 // to get as array not as string
 
-console.log(kfriends)
+for(var i = 0; i < kfriends.length; i++ ){
+    console.log(kfriends[i]);
+    document.write(
+    `
+        <li id="add">${kfriends[i]}</li>
+        <button onclick = "addfriends(event)"> addfr </button>
+    `
+    )
+    // document.write(`<li id="add">${kfriends[i]}<button  onclick= "addfriends(event)">add friend</button> <button onclick= "delfriends(event)">del friend</button></li>`)
+    }
 
-document.createElement(li)
+function addfriends(e){
+    var s = document.getElementById("add");
+    var ss = s.innerHTML
+    console.log(ss)
+}
+
+function delfriends(){
+
+}
 
 </script>
 
